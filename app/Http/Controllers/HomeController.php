@@ -31,5 +31,6 @@ class HomeController extends Controller
         $Category =  DB::table('category')->pluck('category_name','category_name')->all();
 
         return view('home',compact('Category'));
+        
     }
 }
