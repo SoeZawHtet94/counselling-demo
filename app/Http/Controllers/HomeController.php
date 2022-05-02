@@ -26,6 +26,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        // add command
 
         $Category =  DB::table('category')->pluck('category_name','category_name')->all();
 
